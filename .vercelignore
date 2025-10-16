@@ -1,7 +1,6 @@
 # Ignore large or backend-only folders not needed for frontend deploy
 # Keep `anchor/src` because it contains client exports used by the frontend.
 # Keep generated IDL and types used by the frontend, but ignore other heavy target files
-anchor/target/
 !anchor/target/idl/
 !anchor/target/types/
 anchor/programs/
