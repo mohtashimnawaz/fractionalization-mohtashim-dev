@@ -1,6 +1,9 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
+  // Ensure Next.js knows the monorepo/workspace root when multiple lockfiles
+  // exist on the machine so output tracing and builds are deterministic.
+  outputFileTracingRoot: process.cwd(),
   images: {
     remotePatterns: [
       {
