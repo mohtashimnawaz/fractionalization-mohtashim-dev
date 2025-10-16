@@ -1,9 +1,18 @@
 # Ignore large or backend-only folders not needed for frontend deploy
-anchor/
-target/
+# Keep `anchor/src` because it contains client exports used by the frontend.
+anchor/target/
+anchor/programs/
+anchor/Cargo.lock
+anchor/Cargo.toml
+anchor/Xargo.toml
+anchor/Anchor.toml
+anchor/codama.js
+anchor/programs/fractionalizationskytrade/Cargo.toml
+anchor/programs/fractionalizationskytrade/Xargo.toml
+anchor/programs/fractionalizationskytrade/src/
 node_modules/
 .vscode/
 *.log
 .DS_Store
 
-# Keep src, package.json and next.config.ts
+# Keep anchor/src (contains the frontend-facing exports), src, package.json and next.config.ts
